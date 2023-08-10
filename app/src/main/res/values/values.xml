@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="self_image">
+        <item>@drawable/cat</item>
+        <item>@drawable/catone</item>
+        <item>@drawable/cattwo</item>
+        <item>@drawable/catthree</item>
+        <item>@drawable/me</item>
+    </array>
+</resources>
