@@ -16,7 +16,7 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toTopOf="@+id/editText_name"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintHorizontal_bias="0.21"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
@@ -28,9 +28,9 @@
         android:fontFamily="@font/singleday"
         android:text="@string/sign_id"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText_pw"
+        app:layout_constraintBottom_toTopOf="@+id/editText_id"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -40,41 +40,41 @@
         android:fontFamily="@font/singleday"
         android:text="@string/signin_pw"
         android:textSize="25dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText_id"
+        app:layout_constraintBottom_toTopOf="@+id/editText_pw"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintHorizontal_bias="0.246"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText_name"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
+        android:layout_width="263dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="4dp"
         android:hint="@string/signup_name"
         app:layout_constraintBottom_toTopOf="@+id/signup_Id"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <EditText
-        android:id="@+id/editText_id"
-        android:layout_width="260dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="180dp"
-        android:hint="@string/signin_pwhint"
-        android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText_pw"
         android:layout_width="260dp"
         android:layout_height="45dp"
+        android:layout_marginBottom="160dp"
+        android:hint="@string/signin_pwhint"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_id"
+        android:layout_width="262dp"
+        android:layout_height="51dp"
         android:hint="@string/signin_idhint"
         app:layout_constraintBottom_toTopOf="@+id/signup_pw"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -82,15 +82,15 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:text="@string/signup_signup"
         android:fontFamily="@font/singleday"
-        android:textSize="25dp"
+        android:text="@string/signup_signup"
         android:textColor="@color/buttonFontColor"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.837" />
+        app:layout_constraintVertical_bias="0.857" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

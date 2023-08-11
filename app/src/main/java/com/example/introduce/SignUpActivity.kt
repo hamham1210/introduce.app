@@ -25,11 +25,11 @@ class SignUpActivity : AppCompatActivity() {
                             this,
                             getString(R.string.toast_msg_signupS),
                             Toast.LENGTH_SHORT
-                        ).show()
+                        ).show()// 위의 칸들이 비워지 있지 않으면 토스트 메시지를 띄운다.
                         var intent = Intent(this, SignInActivity::class.java)
                         intent.putExtra("id", editid.text.toString())
                         intent.putExtra("pw", editpw.text.toString())
-                        setResult(RESULT_OK, intent)
+                        setResult(RESULT_OK, intent)//editid와 editpw의 값을 intent에 넣어서 SignIn페이지로 넘긴다.
                         finish()
                     }
                 }
@@ -43,7 +43,7 @@ class SignUpActivity : AppCompatActivity() {
                     }
                 }
             }
-        signup()
+        signup()// 아무것도 입력하지 않았을 때도 메시지를 띄우게한다.
         editid.addTextChangedListener {
             signup()
         }

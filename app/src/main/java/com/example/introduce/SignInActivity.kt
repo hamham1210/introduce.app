@@ -32,11 +32,11 @@ class SignInActivity : AppCompatActivity() {
                 val pw = result.data?.getStringExtra("pw") ?: ""
                 idEditText.setText(id)
                 pwEditText.setText(pw)
-            }
+            }//id,pw의 키값을 가져와서 idEditText와 pwEditText칸에 띄운다.
         }
         btnsignup.setOnClickListener{
         val intent = Intent(this, SignUpActivity::class.java)
-        resultLauncher.launch(intent)}
+        resultLauncher.launch(intent)} //SignUp에서 쓴 인텐트를 가져온다.
 
 
 
