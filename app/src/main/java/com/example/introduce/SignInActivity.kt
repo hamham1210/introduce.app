@@ -45,15 +45,15 @@ class SignInActivity : AppCompatActivity() {
                 btnlogin.setOnClickListener {
                     val intent = Intent(this, HomeActivity::class.java)
                     val id = idEditText.text.toString()
-                    Toast.makeText(this, "로그인 성공", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.toast_msg_idS), Toast.LENGTH_SHORT).show()
                     intent.putExtra("ID", id)
                     startActivity(intent)// ID라는 name으로 id value를 담아서 전달한다.
                 }//토스트 메시지 생성
             } else {
                 btnlogin.setOnClickListener {
-                    Toast.makeText(this, "아이디/비밀번호를 확인해주세요", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, getString(R.string.toast_msg_idpaErr), Toast.LENGTH_SHORT).show()
                 }
-                return
+
             }
         }
         checkAndShowToast()

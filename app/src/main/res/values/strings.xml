@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">introduce</string>
+    <string name="sign_id">ID</string>
+    <string name="signin_idhint">Please enter your ID.</string>
+    <string name="signin_pw">PASSWORD</string>
+    <string name="signin_pwhint">Please enter your password.</string>
+    <string name="signin_signin">signin</string>
+    <string name="signin_signup">signup</string>
+    <string name="home_name">이름 : 박혜린</string>
+    <string name="home_age">나이 : 28</string>
+    <string name="home_mbti">mbti : ISTJ</string>
+    <string name="home_end">종료</string>
+    <string name="home_title">Introduce</string>
+    <string name="sign_name">name</string>
+    <string name="signup_name">Please enter your name.</string>
+    <string name="signup_signup">signup</string>
+    <string name="toast_msg_idS">로그인 성공</string>
+    <string name="toast_msg_idpaErr">아이디/비밀번호를 확인해주세요</string>
+    <string name="toast_msg_signupS">회원가입 성공</string>
+    <string name="toast_signup_Err">입력되지 않은 정보가 있습니다.</string>
 </resources>

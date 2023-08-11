@@ -14,8 +14,8 @@ class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {//앱이 최초 실행 됐을때 수행
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home) //xml 화면 뷰와 연결한다.
-        var input_id = findViewById<TextView>(R.id.input_id)
-        var randomImageView = findViewById<ImageView>(R.id.imageprofile)
+        val input_id = findViewById<TextView>(R.id.input_id)
+        val randomImageView = findViewById<ImageView>(R.id.imageprofile)
 
         imageArray = resources.obtainTypedArray(R.array.self_image).use { typedArray ->
             Array(typedArray.length()) { typedArray.getResourceId(it, 0) }
@@ -27,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
         {
             input_id.text = intent.getStringExtra("ID")
         }
-        var btn_end = findViewById<Button>(R.id.button_finish)
+        val btn_end = findViewById<Button>(R.id.button_finish)
         btn_end.setOnClickListener {
             var intent2 = Intent(this, SignInActivity::class.java)
             startActivity(intent2)

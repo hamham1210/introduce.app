@@ -5,249 +5,126 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="@drawable/homepage">
+    android:background="@drawable/homepage"
+    android:textAlignment="center">
+
 
     <TextView
         android:id="@+id/text_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="92dp"
+        android:layout_width="31dp"
+        android:layout_height="38dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/singleday"
+        android:textSize="25dp"
         android:text="ID:"
         android:textColor="@color/introduceColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.394"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageprofile" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/input_id"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/text_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.639" />
 
     <TextView
         android:id="@+id/input_id"
         android:layout_width="111dp"
         android:layout_height="37dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="76dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
+        android:fontFamily="@font/singleday"
+        android:textSize="25dp"
         android:text=""
         android:textColor="@color/introduceColor"
-        app:layout_constraintBottom_toTopOf="@+id/text_name"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.211"
-        app:layout_constraintStart_toEndOf="@+id/text_id"
-        app:layout_constraintVertical_bias="0.742" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
 
     <TextView
         android:id="@+id/text_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="이름 : 스파르타코딩이"
+        android:fontFamily="@font/singleday"
+        android:text="@string/home_name"
         android:textColor="@color/introduceColor"
-        app:layout_constraintBottom_toTopOf="@+id/text_age"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_id" />
+        app:layout_constraintTop_toBottomOf="@+id/input_id" />
 
     <TextView
         android:id="@+id/text_age"
-        android:layout_width="78dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="44dp"
-        android:text="나이 : 28"
+        android:layout_width="138dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="150dp"
+        android:fontFamily="@font/singleday"
+        android:text="@string/home_age"
         android:textColor="@color/introduceColor"
-        app:layout_constraintBottom_toTopOf="@+id/text_mbti"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_id"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/text_mbti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/singleday"
+        android:text="@string/home_mbti"
         android:textColor="@color/introduceColor"
-        android:text="mbti : "
-        app:layout_constraintBottom_toTopOf="@+id/button_finish"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.12"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <ScrollView
-        android:layout_width="100dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginBottom="60dp"
-        app:layout_constraintBottom_toTopOf="@+id/button_finish"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-
-        app:layout_constraintStart_toEndOf="@+id/text_mbti">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0F8FF"
-                android:gravity="center"
-                android:text="INTJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0F8FF"
-                android:gravity="center"
-                android:text="INFJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0F8FF"
-                android:gravity="center"
-                android:text="ENTJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0F8FF"
-                android:gravity="center"
-                android:text="ENTP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0FFF0"
-                android:gravity="center"
-                android:text="ENFP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0FFF0"
-                android:gravity="center"
-                android:text="INFJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0FFF0"
-                android:gravity="center"
-                android:text="INFP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#E0FFFF"
-                android:gravity="center"
-                android:text="ISTJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0FFF0"
-                android:gravity="center"
-                android:text="ENFJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#E0FFFF"
-                android:gravity="center"
-                android:text="ISFJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#E0FFFF"
-                android:gravity="center"
-                android:text="ESTJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#F0F8FF"
-                android:gravity="center"
-                android:text="INTP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#E0FFFF"
-                android:gravity="center"
-                android:text="ESFJ" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#FFFFF0"
-                android:gravity="center"
-                android:text="ISTP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#FFFFF0"
-                android:gravity="center"
-                android:text="ISFP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#FFFFF0"
-                android:gravity="center"
-                android:text="ESTP" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:background="#FFFFF0"
-                android:gravity="center"
-                android:text="ESFP" />
-
-
-        </LinearLayout>
-
-    </ScrollView>
-
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787" />
 
     <ImageView
         android:id="@+id/imageprofile"
-        android:layout_width="269dp"
-        android:layout_height="192dp"
-        android:layout_marginTop="220dp"
+        android:layout_width="255dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/singleday"
+        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.584"
+        app:layout_constraintHorizontal_bias="0.439"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/introduce"
         app:srcCompat="@drawable/me" />
-
-    <Button
-        android:id="@+id/button_finish"
-        android:layout_width="151dp"
-        android:layout_height="59dp"
-        android:backgroundTint="@color/buttonColcr"
-        android:text="종료"
-        android:textColor="@color/buttonFontColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/introduce"
         android:layout_width="158dp"
         android:layout_height="53dp"
-        android:layout_marginTop="100dp"
-        android:text="Introduce"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/singleday"
+        android:text="@string/home_title"
         android:textAlignment="center"
         android:textColor="@color/buttonborder"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.587" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_finish"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/singleday"
+        android:text="@string/home_end"
+        android:textColor="@color/buttonFontColor"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

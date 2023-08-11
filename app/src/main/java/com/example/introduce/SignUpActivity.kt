@@ -19,29 +19,30 @@ class SignUpActivity : AppCompatActivity() {
 
 
         fun signup() {
-            val pw = editpw.text.toString()
-            val id = editid.text.toString()
-            when {
-                editname.text.isNotBlank() && editpw.text.isNotBlank() && editid.text.isNotBlank() -> {
+            if (editname.text.isNotBlank() && editpw.text.isNotBlank() && editid.text.isNotBlank()){
                     btnsignup.setOnClickListener {
-                        Toast.makeText(this, "회원가입 성공", Toast.LENGTH_SHORT).show()
-                        var intent = Intent(this,SignInActivity::class.java)
-                        intent.putExtra("id", id)
-                        intent.putExtra("pw", pw)
+                        Toast.makeText(
+                            this,
+                            getString(R.string.toast_msg_signupS),
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        var intent = Intent(this, SignInActivity::class.java)
+                        intent.putExtra("id", editid.text.toString())
+                        intent.putExtra("pw", editpw.text.toString())
                         setResult(RESULT_OK, intent)
                         finish()
-
                     }
                 }
-
-                else -> {
+                else {
                     btnsignup.setOnClickListener {
-                        Toast.makeText(this, "입력되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this,
+                            getString(R.string.toast_signup_Err),
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
             }
-
-        }
         signup()
         editid.addTextChangedListener {
             signup()
@@ -53,6 +54,4 @@ class SignUpActivity : AppCompatActivity() {
             signup()
         }
     }
-
-
 }
